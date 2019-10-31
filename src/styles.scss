@@ -15,10 +15,14 @@ html, body, mat-sidenav-container, app-root, .site {
 .site {
   display: flex;
   flex-direction: column;
+}
 
-  main {
-    flex: 1;
-  }
+main {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .flex-fill {
