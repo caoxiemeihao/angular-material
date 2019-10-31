@@ -12,11 +12,12 @@ import {
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule
+    // 新版本中 share.module 当公共导入导出时候，貌似不用 imports，直接 exporets 即可 😶
+    // CommonModule,
+    // MatToolbarModule,
+    // MatIconModule,
+    // MatButtonModule,
+    // MatCardModule
   ],
   exports: [
     CommonModule,
