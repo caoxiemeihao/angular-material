@@ -7,27 +7,26 @@ import {
   MatCardModule,
   MatInputModule,
   MatListModule,
+  MatSlideToggleModule,
 } from '@angular/material';
 
+const modules = [
+  CommonModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatInputModule,
+  MatListModule,
+  MatSlideToggleModule,
+];
 
 @NgModule({
   declarations: [],
   imports: [
     // 新版本中 share.module 当公共导入导出时候，貌似不用 imports，直接 exporets 即可 😶
-    // CommonModule,
-    // MatToolbarModule,
-    // MatIconModule,
-    // MatButtonModule,
-    // MatCardModule
+    // ...modules
   ],
-  exports: [
-    CommonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule,
-    MatInputModule,
-    MatListModule,
-  ],
+  exports: [...modules],
 })
 export class ShareModule { }
