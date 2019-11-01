@@ -6,6 +6,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatInputModule,
+  MatListModule,
 } from '@angular/material';
 
 
@@ -26,6 +27,7 @@ import {
     MatButtonModule,
     MatCardModule,
     MatInputModule,
+    MatListModule,
   ],
 })
 export class ShareModule { }
