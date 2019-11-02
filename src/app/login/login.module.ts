@@ -2,9 +2,13 @@ import { NgModule } from '@angular/core';
 import { ShareModule } from '../share/share.module';
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [
+    LoginComponent,
+    RegisterComponent
+  ],
   imports: [
     ShareModule,
     LoginRoutingModule

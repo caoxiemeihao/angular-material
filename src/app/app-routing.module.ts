@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginModule } from './login/login.module';
+// import { LoginModule } from './login/login.module';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'project', redirectTo: '/project', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes),
-    LoginModule,
+    // LoginModule, // 放这里也是可以用的，现在移动到 app.module.ts 中
   ],
   exports: [RouterModule]
 })
