@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+type User = { id: number, name: string };
+
 @Component({
   selector: 'app-invite',
   templateUrl: './invite.component.html',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InviteComponent implements OnInit {
 
+  items: Array<User> = [
+    { id: 1, name: 'zhangsan' },
+    { id: 2, name: 'lisi' },
+    { id: 3, name: 'wangwu' },
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  displayUser = (user: User) => user.name;
 
 }

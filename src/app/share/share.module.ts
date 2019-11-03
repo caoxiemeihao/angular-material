@@ -10,6 +10,7 @@ import {
   MatSlideToggleModule,
   MatGridListModule,
   MatDialogModule,
+  MatAutocompleteModule,
 } from '@angular/material';
 
 const modules = [
@@ -23,6 +24,7 @@ const modules = [
   MatSlideToggleModule,
   MatGridListModule,
   MatDialogModule,
+  MatAutocompleteModule,
 ];
 
 @NgModule({
