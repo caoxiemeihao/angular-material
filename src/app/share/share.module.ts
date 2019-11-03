@@ -11,6 +11,7 @@ import {
   MatGridListModule,
   MatDialogModule,
   MatAutocompleteModule,
+  MatMenuModule,
 } from '@angular/material';
 
 const modules = [
@@ -25,6 +26,7 @@ const modules = [
   MatGridListModule,
   MatDialogModule,
   MatAutocompleteModule,
+  MatMenuModule,
 ];
 
 @NgModule({
