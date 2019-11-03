@@ -7,6 +7,7 @@ import { TaskRoutingModule } from './task-routing.module';
 import { ShareModule } from '../share/share.module';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { CopyTaskComponent } from './copy-task/copy-task.component';
+import { NewTaskListComponent } from './new-task-list/new-task-list.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { CopyTaskComponent } from './copy-task/copy-task.component';
     TaskItemComponent,
     NewTaskComponent,
     CopyTaskComponent,
+    NewTaskListComponent,
   ],
   imports: [
     TaskRoutingModule,
@@ -25,6 +27,7 @@ import { CopyTaskComponent } from './copy-task/copy-task.component';
   entryComponents: [
     NewTaskComponent, // dialog 组件必须预先装载
     CopyTaskComponent,
+    NewTaskListComponent,
   ]
 })
 export class TaskModule { }
