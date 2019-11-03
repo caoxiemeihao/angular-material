@@ -17,6 +17,8 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 1,
           desc: '任务一：学习Anuglar',
+          completed: true,
+          priority: 3,
           owner: {
             id: 1,
             name: '张三',
@@ -27,12 +29,15 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 2,
           desc: '任务一：学习Material UI',
+          completed: false,
+          priority: 2,
           owner: {
             id: 1,
             name: '李四',
             avatar: 'avatars:svg-14',
           },
           dueDate: new Date(),
+          reminder: new Date(),
         },
       ]
     },
@@ -44,6 +49,8 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 1,
           desc: '任务一：学习Anuglar',
+          completed: false,
+          priority: 1,
           owner: {
             id: 1,
             name: '张三',
@@ -54,6 +61,8 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 2,
           desc: '任务一：学习Material UI',
+          completed: false,
+          priority: 2,
           owner: {
             id: 1,
             name: '李四',
@@ -71,6 +80,7 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 1,
           desc: '任务一：学习Anuglar',
+          completed: false,
           owner: {
             id: 1,
             name: '张三',
@@ -81,6 +91,7 @@ export class TaskHomeComponent implements OnInit {
         {
           id: 2,
           desc: '任务一：学习Material UI',
+          completed: false,
           owner: {
             id: 1,
             name: '李四',
