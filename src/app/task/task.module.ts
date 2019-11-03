@@ -5,6 +5,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { TaskRoutingModule } from './task-routing.module';
 import { ShareModule } from '../share/share.module';
+import { NewTaskComponent } from './new-task/new-task.component';
 
 
 @NgModule({
@@ -13,10 +14,14 @@ import { ShareModule } from '../share/share.module';
     TaskHeaderComponent,
     TaskListComponent,
     TaskItemComponent,
+    NewTaskComponent,
   ],
   imports: [
     TaskRoutingModule,
     ShareModule,
+  ],
+  entryComponents: [
+    NewTaskComponent, // dialog 组件必须预先装载
   ]
 })
 export class TaskModule { }

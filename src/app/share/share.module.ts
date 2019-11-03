@@ -12,6 +12,9 @@ import {
   MatDialogModule,
   MatAutocompleteModule,
   MatMenuModule,
+  MatDatepickerModule,
+  MatRadioModule,
+  MatNativeDateModule,
 } from '@angular/material';
 
 const modules = [
@@ -27,6 +30,9 @@ const modules = [
   MatDialogModule,
   MatAutocompleteModule,
   MatMenuModule,
+  MatDatepickerModule,
+  MatRadioModule,
+  MatNativeDateModule,
 ];
 
 @NgModule({
