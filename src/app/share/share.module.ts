@@ -17,6 +17,7 @@ import {
   MatNativeDateModule,
   MatCheckboxModule,
   MatTooltipModule,
+  MatSelectModule,
 } from '@angular/material';
 
 const modules = [
@@ -37,6 +38,7 @@ const modules = [
   MatNativeDateModule,
   MatCheckboxModule,
   MatTooltipModule,
+  MatSelectModule,
 ];
 
 @NgModule({
