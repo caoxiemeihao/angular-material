@@ -1,4 +1,4 @@
-<form>
+<form class="register-form">
   <mat-card>
     <mat-card-header>
       <mat-card-title>注册</mat-card-title>
@@ -16,19 +16,19 @@
       <mat-form-field class="full-width">
         <input matInput type="password" placeholder="确认密码">
       </mat-form-field>
-      <!-- <mat-grid-list cols="8" rowHeight="1:1"> -->
-      <mat-grid-list cols="6">
+      <mat-grid-list cols="8" rowHeight="1:1">
         <mat-grid-tile *ngFor="let item of items">
           <mat-icon class="avatar" [svgIcon]="item"></mat-icon>
         </mat-grid-tile>
       </mat-grid-list> 
       <div class="text-right">
+        <br>
         <button mat-raised-button color="primary" type="button">注册</button>
       </div>
     </mat-card-content>
-    <mat-card-actions class="text-right">
+    <div class="text-right">
       <p>已有账号？<a href="">登录</a></p>
       <p>忘记密码？<a href="">找回</a></p>
-    </mat-card-actions>
+    </div>
   </mat-card>
 </form>

@@ -4,7 +4,11 @@
 
 .due-date {
   background-color: #ff4f3e;
+  font-size: 10px;
+  line-height: 14px;
   color: #fff;
+  padding: 1px 4px;
+  border-radius: 2px;
 }
 
 .alarm  {
@@ -31,8 +35,9 @@
 
 .container {
   width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba($color: #000000, $alpha: 1.0);
+  border-radius: 2px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 1px 2px rgba($color: #000000, $alpha: 1.0);
 }
 
 mat-icon.avatar {

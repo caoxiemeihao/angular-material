@@ -2,15 +2,16 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 const template = (
-`
-<h3 mat-dialog-title>{{title}}</h3>
-<div mat-dialog-content>{{content}}</div>
-<div mat-dialog-actions>
-  <button type="button" mat-raised-button class="primary" (click)="onClick(true)">确定</button>
-  <button type="button" mat-button mat-dialog-close (click)="onClick(false)">取消</button>
+`<div style="width:290px;">
+  <h3 class="mat-dialog-title">{{title}}</h3>
+  <div class="mat-dialog-content">{{content}}</div>
+  <div class="text-center">
+    <br>
+    <button type="button" class="primary mat-raised-button" (click)="onClick(true)">确定</button>
+    <button type="button" class="mat-button mat-dialog-close" (click)="onClick(false)">取消</button>
+  </div>
 </div>
-`
-);
+`);
 
 @Component({
   selector: 'app-confirm-dialog',
