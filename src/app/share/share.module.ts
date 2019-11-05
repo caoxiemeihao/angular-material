@@ -18,6 +18,7 @@ import {
   MatCheckboxModule,
   MatTooltipModule,
   MatSelectModule,
+  MatSidenavModule,
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
@@ -40,13 +41,16 @@ const modules = [
   MatCheckboxModule,
   MatTooltipModule,
   MatSelectModule,
+  MatSidenavModule,
 ];
 
 @NgModule({
   declarations: [ConfirmDialogComponent],
   imports: [
-    // 新版本中 share.module 当公共导入导出时候，貌似不用 imports，直接 exporets 即可 😶
+    // 新版本中 share.module 当公共导入导出时候，貌似不用 imports，直接 exporets 即可 😶 [19-10-31]
     // ...modules
+
+    // ShareModule 中没有组件依赖 material，所以不用 inport [19-11-05]
   ],
   exports: [...modules],
   entryComponents: [ConfirmDialogComponent],

@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatSidenavModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -16,12 +15,11 @@ import { TaskModule } from './task/task.module';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    BrowserAnimationsModule,
     CoreModule,
     LoginModule,
     ProjectModule,
-    MatSidenavModule,
     TaskModule,
+    BrowserAnimationsModule, // 放最后，避免可能的 BUG
   ],
   providers: [],
   bootstrap: [AppComponent]

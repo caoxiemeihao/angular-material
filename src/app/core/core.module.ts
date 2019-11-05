@@ -1,4 +1,5 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -8,8 +9,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { loadSvg } from '../utils/svg.util';
-
-
 
 @NgModule({
   declarations: [
@@ -21,11 +20,13 @@ import { loadSvg } from '../utils/svg.util';
     HttpClientModule,
     ShareModule,
     BrowserAnimationsModule,
+    RouterModule, // 便签中 routerLink 属性需要
   ],
   exports: [ 
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
+    ShareModule,
   ]
 })
 export class CoreModule {
