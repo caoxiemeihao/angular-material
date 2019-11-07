@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { NewProjectComponent } from '../new-project/new-project.component';
 import { InviteComponent } from '../invite/invite.component';
@@ -7,6 +7,7 @@ import { slideToRight } from 'src/app/animation/router.anim';
 import { listAnim } from 'src/app/animation/list.anim';
 
 @Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'app-project-list',
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.scss'],
@@ -31,7 +32,7 @@ export class ProjectListComponent implements OnInit {
     }
   ];
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private cd: ChangeDetectorRef) { }
 
   ngOnInit() {
   }
@@ -47,6 +48,7 @@ export class ProjectListComponent implements OnInit {
         desc: '这是一个新的项目',
         coverImg: "assets/img/covers/4.jpg"
       }];
+      this.cd.markForCheck();
     });
   }
 
@@ -66,6 +68,7 @@ export class ProjectListComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(res => {
       this.projects = this.projects.filter(p => p.id !== project.id);
+      this.cd.markForCheck();
     });
   }
 }
