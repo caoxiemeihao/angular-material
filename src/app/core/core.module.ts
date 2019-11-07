@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { loadSvg } from '../utils/svg.util';
+// import 'rxjs/add/operator/take';
 
 @NgModule({
   declarations: [
