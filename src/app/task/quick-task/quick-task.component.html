@@ -1,0 +1,31 @@
+<!-- <form #f="ngForm" (ngSubmit)="onSubmit(f, $event)">
+  <mat-form-field class="full-width">
+    <input
+      matInput
+      type="text"
+      name="desc"
+      [ngModel]="desc"
+      (ngModelChange)="desc=$event"
+      required
+      placeholder="在这里快速建立任务">
+    <button matSuffix md-icon-button type="button">
+      <mat-icon>send</mat-icon>
+    </button>
+    <mat-error>不能为空哦</mat-error>
+  </mat-form-field>
+</form>
+
+<div>
+  表单数据：{{ f.value | json }}
+</div>
+
+<div>
+  表单验证状态：{{ f.valid | json }}
+</div> -->
+
+<mat-form-field class="full-width">
+  <input matInput [ngModel]="desc" (ngModelChange)="desc=$event" placeholder="在这里快速建立任务">
+  <button matSuffix md-icon-button type="button" (click)="sendQuickTask()">
+    <mat-icon>send</mat-icon>
+  </button>
+</mat-form-field>

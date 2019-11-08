@@ -22,6 +22,10 @@ import {
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DirectiveModule } from '../directive/directive.module';
+import {
+  FormsModule, // 包涵一些表单指令 比如 [(ngModule)]
+  ReactiveFormsModule // 响应式表单，模板中的一些错误处理指令之类的
+} from '@angular/forms';
 
 const modules = [
   CommonModule,
@@ -44,6 +48,8 @@ const modules = [
   MatSelectModule,
   MatSidenavModule,
   DirectiveModule,
+  FormsModule,
+  ReactiveFormsModule,
 ];
 
 @NgModule({
