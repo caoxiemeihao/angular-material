@@ -1,4 +1,4 @@
-<form class="register-form">
+<form class="register-form" [formGroup]="form" (ngSubmit)="handleSubmit(form, $event)">
   <mat-card>
     <mat-card-header>
       <mat-card-title>注册</mat-card-title>
@@ -16,11 +16,13 @@
       <mat-form-field class="full-width">
         <input matInput type="password" placeholder="确认密码">
       </mat-form-field>
-      <mat-grid-list cols="8" rowHeight="1:1">
-        <mat-grid-tile *ngFor="let item of items">
-          <mat-icon class="avatar" [svgIcon]="item"></mat-icon>
-        </mat-grid-tile>
-      </mat-grid-list> 
+      <app-image-list-select
+        [useSvgIcon]="true"
+        [cols]="6"
+        [title]="'头像选择'"
+        [items]="items"
+        formControlName="avatar">
+      </app-image-list-select>
       <div class="text-right">
         <br>
         <button mat-raised-button color="primary" type="button">注册</button>

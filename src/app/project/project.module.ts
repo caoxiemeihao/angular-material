@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ShareModule } from '../share/share.module';
+import { ShareModule } from '../shared/share.module';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { NewProjectComponent } from './new-project/new-project.component';

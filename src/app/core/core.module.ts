@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ShareModule } from '../share/share.module';
+import { ShareModule } from '../shared/share.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
