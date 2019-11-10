@@ -2,7 +2,7 @@ import { Component, OnInit, HostBinding, ChangeDetectionStrategy, ChangeDetector
 import { MatDialog } from '@angular/material';
 import { NewProjectComponent } from '../new-project/new-project.component';
 import { InviteComponent } from '../invite/invite.component';
-import { ConfirmDialogComponent } from 'src/app/share/confirm-dialog/confirm-dialog.component';
+import { ConfirmDialogComponent } from 'src/app/shared/confirm-dialog/confirm-dialog.component';
 import { slideToRight } from 'src/app/animation/router.anim';
 import { listAnim } from 'src/app/animation/list.anim';
 

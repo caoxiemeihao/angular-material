@@ -26,6 +26,7 @@ import {
   FormsModule, // 包涵一些表单指令 比如 [(ngModule)]
   ReactiveFormsModule // 响应式表单，模板中的一些错误处理指令之类的
 } from '@angular/forms';
+import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
 
 const modules = [
   CommonModule,
@@ -53,14 +54,21 @@ const modules = [
 ];
 
 @NgModule({
-  declarations: [ConfirmDialogComponent],
+  declarations: [
+    ConfirmDialogComponent,
+    ImageListSelectComponent,
+  ],
   imports: [
     // 新版本中 share.module 当公共导入导出时候，貌似不用 imports，直接 exporets 即可 😶 [19-10-31]
     // ...modules
 
     // ShareModule 中没有组件依赖 material，所以不用 inport [19-11-05]
+    ...modules //19-11-09 ImageListSelectComponent 中有用到 mat-cion
   ],
-  exports: [...modules],
+  exports: [
+    ...modules,
+    ImageListSelectComponent,
+  ],
   entryComponents: [ConfirmDialogComponent],
 })
 export class ShareModule { }
