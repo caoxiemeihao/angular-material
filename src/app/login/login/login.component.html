@@ -5,13 +5,13 @@
         每日佳句
       </mat-card-title>
       <mat-card-subtitle>
-        问渠那得清如许，为有源头活水来
+        {{quote.cn}}
       </mat-card-subtitle>
     </mat-card-header>
     <!-- <img matCardImage src="assets/Naruto.jpeg"> matCardImage === class="mat-card-image" -->
-    <img class="mat-card-image" src="assets/Naruto.jpeg">
+    <img class="mat-card-image" [src]="quote.pic">
     <mat-card-content>
-      学而不思则罔，思而不学则殆
+      {{quote.en}}
     </mat-card-content>
   </mat-card>
 

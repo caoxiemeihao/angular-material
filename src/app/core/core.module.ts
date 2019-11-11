@@ -23,11 +23,18 @@ import { loadSvg } from '../utils/svg.util';
     BrowserAnimationsModule,
     RouterModule, // 便签中 routerLink 属性需要
   ],
-  exports: [ 
+  exports: [
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
     ShareModule,
+  ],
+  providers: [
+    {
+      provide: 'BASE_CONFIG', useValue: {
+        uri: 'http://localhost:3000'
+      }
+    }
   ]
 })
 export class CoreModule {

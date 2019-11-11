@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { LoginModule } from './login/login.module';
 import { ProjectModule } from './project/project.module';
 import { TaskModule } from './task/task.module';
+import { ServiceModule } from './service/service.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TaskModule } from './task/task.module';
     LoginModule,
     ProjectModule,
     TaskModule,
+    ServiceModule.forRoot(),
     BrowserAnimationsModule, // 放最后，避免可能的 BUG
   ],
   providers: [],
