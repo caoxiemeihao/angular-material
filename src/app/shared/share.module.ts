@@ -27,6 +27,7 @@ import {
   ReactiveFormsModule // 响应式表单，模板中的一些错误处理指令之类的
 } from '@angular/forms';
 import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
+import { AgeInputComponent } from './age-input/age-input.component';
 
 const modules = [
   CommonModule,
@@ -57,6 +58,7 @@ const modules = [
   declarations: [
     ConfirmDialogComponent,
     ImageListSelectComponent,
+    AgeInputComponent,
   ],
   imports: [
     // 新版本中 share.module 当公共导入导出时候，貌似不用 imports，直接 exporets 即可 😶 [19-10-31]
